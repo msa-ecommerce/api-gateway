@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8bc20a8-2ae3-4938-ac8c-29c8e5066f43" name="Default Changelist" comment="" />
+    <list default="true" id="a8bc20a8-2ae3-4938-ac8c-29c8e5066f43" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/apigateway/ApiGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/apigateway/ApiGatewayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/apigateway/filter/AuthorizationHeaderFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/apigateway/filter/AuthorizationHeaderFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/apigateway/filter/GlobalFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/apigateway/filter/GlobalFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,26 +46,23 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="api-gateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.apigateway.ApiGatewayApplication" />
@@ -76,7 +80,12 @@
       <option name="presentableId" value="Default" />
       <updated>1640662908129</updated>
       <workItem from="1640662909357" duration="389000" />
-      <workItem from="1640668490208" duration="645000" />
+      <workItem from="1640668490208" duration="1222000" />
+      <workItem from="1640677209297" duration="7144000" />
+      <workItem from="1640746091045" duration="4201000" />
+      <workItem from="1640848138766" duration="669000" />
+      <workItem from="1640857349434" duration="950000" />
+      <workItem from="1640948124444" duration="4082000" />
     </task>
     <servers />
   </component>
@@ -106,5 +115,28 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/apigateway/filter/AuthorizationHeaderFilter.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="environment.g" language="JAVA" />
+        <watch expression="subject" />
+        <watch expression="Jwts.parser().setSigningKey(environment.getProperty(&quot;token.secret&quot;)).parseClaimsJws(jwt).getBody().getSubject();" language="JAVA" />
+        <watch expression="environment.getProperty(&quot;token.secret&quot;)" language="JAVA" />
+        <watch expression="Jwts.parser().setSigningKey(&quot;user_token&quot;).parseClaimsJws(jwt).getBody().getSubject()" language="JAVA" />
+        <watch expression="Jwts.parser().setSigningKey(environment.getProperty(&quot;token.secret&quot;))" language="JAVA" />
+        <watch expression="Jwts" language="JAVA" />
+        <watch expression="Jwts.parser()" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
